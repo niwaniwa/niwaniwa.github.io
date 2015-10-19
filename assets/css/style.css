@@ -41,7 +41,13 @@ table {
   border-spacing: 0;
 }
 
+
+glass {
+	background-color:rgba(255, 255, 255, 0.2)
+}
+
 * {
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -59,12 +65,18 @@ body {
   color: #fff;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
+    
 }
 
 #particles {
+
   width: 100%;
   height: 100%;
   overflow: hidden;
+	position: fixed;
+    -webkit-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 }
 
 #intro {

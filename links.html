@@ -31,6 +31,18 @@
 			.SETO {
 				font-family: SETO, "游ゴシック", sans-serif;
 			}
+			.photo {
+				padding: 8px;
+				border-top: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				border-bottom: 1px solid #c2c2c2;
+				border-right: 1px solid #c2c2c2;
+				/* IE */
+				-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#cccccc,direction=135,strength=3,enabled=true)";
+				filter: progid:DXImageTransform.Microsoft.Shadow(color=#cccccc,direction=135,strength=3,enabled=true); /* IE5.5+ */
+				background: #fff;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -70,9 +82,40 @@
 		<div class="container">
 			<div class="bs-component">
 				<ul class="breadcrumb">
-					<li><a href="index.html">Home</a></li>
-					<li class="active">Links</li>
+					<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+					<li class="active"><i class="fa fa-link"></i>Links</li>
 				</ul>
+			</div>
+			<hr>
+			<h3 class="text-canter">Links</h3>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+					<div class="panel panel-default">
+						<div class="panel-heading SETO">ぐるぐる</div>
+						<!-- https://minotar.net/helm/<id>/100.png -->
+						<!-- <p class="fa fa-user" style="font-size:70;color:#949cd9"></p> -->
+						<i class="fa fa-cog fa-spin" style="font-size:70;color:#949cd9"></i>
+						<p class="SETO">ぐるぐる青</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+					<div class="panel panel-default">
+						<div class="panel-heading SETO">ぐるぐる</div>
+						<!-- https://minotar.net/helm/<id>/100.png -->
+						<!-- <p class="fa fa-user" style="font-size:70;color:#949cd9"></p> -->
+						<i class="fa fa-cog fa-spin" style="font-size:70;color:#ffd548"></i>
+						<p class="SETO">ぐるぐる黄</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+					<div class="panel panel-default">
+						<div class="panel-heading SETO">ぐるぐる</div>
+						<!-- https://minotar.net/helm/<id>/100.png -->
+						<!-- <p class="fa fa-user" style="font-size:70;color:#949cd9"></p> -->
+						<i class="fa fa-cog fa-spin" style="font-size:70;color:#ff4c4c"></i>
+						<p class="SETO">ぐるぐる赤</p>
+					</div>
+				</div>
 			</div>
 		</div>
 

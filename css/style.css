@@ -1,5 +1,5 @@
 body { padding-top: 10rem; }
-  @media ( min-width: 768px ) {
+@media ( min-width: 768px ) {
     #banner {
       min-height: 300px;
       border-bottom: none;
@@ -35,16 +35,6 @@ body { padding-top: 10rem; }
       margin-bottom: 10px;
     }
 }
-@media (max-width: 480px) {
-    .text-left{
-        text-align: center;
-        margin-left: 3rem;
-    }
-    .text-right{
-        text-align: center;
-        margin-right: 3rem;
-    }
-}
 .text-center{text-align: center}
 .text-left{
     text-align: left;
@@ -75,11 +65,6 @@ bs-component {
     right: 370px;
     bottom: 300px;
     width: 300px;
-}
-@media (max-width: 767px) {
-    .image-text-string{
-        text-align: center;
-    }
 }
 .image-text {
     display: inline-block;

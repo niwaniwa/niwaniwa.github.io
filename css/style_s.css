@@ -37,6 +37,7 @@ bs-component {
 }
 .image-text-string{
     text-align: left;
+    margin-right: 5%;
     margin-left: 5rem;
     vertical-align: text-top;
 }

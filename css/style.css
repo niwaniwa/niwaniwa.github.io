@@ -1,4 +1,6 @@
-body { padding-top: 10rem; }
+body { 
+    padding-top: 10rem; 
+}
 @media ( min-width: 768px ) {
     #banner {
       min-height: 300px;
@@ -48,7 +50,7 @@ body { padding-top: 10rem; }
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 7px 15px -5px rgba(255, 0, 0, 0.8);
 }
 .circle {
     width: 300px;
@@ -82,4 +84,5 @@ bs-component {
     font-size: 3rem;
     margin-left: 5.5rem;
 }
+
 

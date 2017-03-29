@@ -9,9 +9,18 @@
         <link href="css/style.css" media="screen and (min-width:700px)" type="text/css" rel="stylesheet">
         <link href="css/style_s.css" media="screen and (max-width:700px)" type="text/css" rel="stylesheet">
         <script src="js/bootstrap.min.js"></script>
+        <style>
+            #lines-canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -20;
+            }
+        </style>
     </head>
     
     <body class="no-thank-yu" style="padding-top: 18rem;">
+        <canvas id="lines-canvas"></canvas>
         <header>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
@@ -55,5 +64,14 @@
 		</footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/lines.min.js"></script>
+        <script>
+             var canvas = $('#lines-canvas');
+            canvas.attr('height',$(window).height());
+            canvas.attr('width',$(window).width());
+            var line = new lines();
+            line.setColor('rgba(255, 168, 200, 0.62)');
+            line.draw()
+        </script>
     </body>
 </html>

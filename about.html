@@ -7,13 +7,13 @@
         <title>About</title>
         <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" media="screen and (min-width:800px)" type="text/css" rel="stylesheet">
-        <link href="css/style_s.css" media="screen and (max-width:800px)" type="text/css" rel="stylesheet">
+        <!-- <link href="css/style_s.css" media="screen and (max-width:800px)" type="text/css" rel="stylesheet"> -->
         <script src="js/bootstrap.min.js"></script>
     </head>
     
     <body class="no-thank-yu" style="padding-top: 10rem;">
         <header>
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse navbar-fixed-top ">
                 <div class="container">
                     <a href="index.html" class="navbar-brand">KOKE</a>
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -21,11 +21,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="navbar-collapse collapse" id="navbar-main">
+                    <div class="navbar-collapse collapse " id="navbar-main">
                         <ul class="nav navbar-nav">
-                            <li><a href="about.html">Profile</a></li>
-                            <li><a href="download.html">Download</a></li>
-                            <li class="disabled"><a href="">Wiki</a></li>
+                            <li class="active"><a href="about.html">Profile</a></li>
+                            <li class="disabled"><a href="#">Download</a></li>
+                            <li class="disabled"><a href="#">Wiki</a></li>
                             <li >
 								<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">その他<span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -38,45 +38,73 @@
             </nav>
         </header>
         
-        <ul class="breadcrumb text-left">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class="disabled">Profile</li>
-        </ul>
-        
-        <p class="text-large-left">Profile</p>
-        <div class="contaier " style="margin-bottom: 6rem;">
-            <img class="text-left image-center image-circle"  src="images/icon.png">
-
-            <ul class="nav nav-tabs image-text">
-                <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
-                <li><a href="#game" data-toggle="tab">Game</a></li>
-                <li class="disabled"><a>   </a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">その他<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#dropdown" data-toggle="tab">Coming soon...</a></li>
-                    </ul>
-                </li>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumb text-left">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="disabled">Profile</li>
             </ul>
-            <div id="myTabContent" class="tab-content image-text-string">
-                <div class="tab-pane fade active in" id="profile">
-                    <p>主にMinecraft、Osu、Steamのゲームなどをしています。</p>
-                    <p>最近はあまりゲームなどをしていませんが、時々しています。</p>
-                    <p>C#、JAVAを少し使っています。</p>
-                    <a href="https://twitter.com/haniwa_koke" class="btn btn-info">Twitter</a>
-                    <!-- <a href="https://osu.ppy.sh/u/6332677" class="btn btn-danger">Osu!</a> -->
-                    <a href="http://steamcommunity.com/id/kokekokko/" class="btn btn-primary">Steam</a>
-                    <a href="https://pvp.minecraft.jp/f010845ca9ac4a04bf2761d92f8b03ff" class="btn btn-success">JPMCPvP</a> 
-                </div>
-                <div class="tab-pane fade" id="game">
-                    <p>... 準備中です...</p>
-                    <!-- <img src="http://lemmmy.pw/osusig/sig.php?colour=pink&uname=KokeNya&pp=1&countryrank&darktriangles&avatarrounding=50&onlineindicator=3&xpbar&xpbarhex"> -->
-                </div>
-                <div class="tab-pane fade" id="dropdown">
-                    <p>... 準備中です...</p>
-                </div>
             </div>
+        </div>
+        
+        <div class="container " style="margin-bottom: 6rem;">
+            
+            
+            <p class="text-large-left">Profile</p>
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-4 col-ms-4 col-xs-12">
+                    <img class="image-circle img-responsive center-block"  src="images/icon.png">
+                </div>
+                
+                <div class="col-lg-8 col-md-8 col-ms-8 col-xs-12 center-block" style="padding-top: 1.5rem;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="nav nav-tabs ">
+                                <li class="active">
+                                    <a href="#profile" data-toggle="tab">Profile</a>
+                                </li>
+                                <li class="disabled">
+                                    <a href="#game" data-toggle="tab"></a>
+                                </li>
+                                <li class="disabled">
+                                    <a></a>
+                                </li>
+                                <!--
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">その他<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#dropdown" data-toggle="tab">Coming soon...</a></li>
+                                    </ul>
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div id="myTabContent" class="tab-content center-block">
+                            <div class="tab-pane fade active in" id="profile">
+                                <p>主にMinecraft、Osu、Steamのゲームなどをしています。</p>
+                                <p>Java, kotlin, C, C# を少し使っています。</p>
+                                <p>アイコンはmintyanさんから頂きました。</p>
+                                <a href="https://twitter.com/haniwa_koke" class="btn btn-info">Twitter</a>
+                                <!-- <a href="https://osu.ppy.sh/u/6332677" class="btn btn-danger">Osu!</a> -->
+                                <a href="http://steamcommunity.com/id/kokekokko/" class="btn btn-primary">Steam</a>
+                                <a href="https://pvp.minecraft.jp/f010845ca9ac4a04bf2761d92f8b03ff" class="btn btn-success">JPMCPvP</a> 
+                                <a href="https://github.com/niwaniwa" class="btn btn-primary">GitHub</a>
+                            </div>
+                            <div class="tab-pane fade" id="game">
+                                <p>... 準備中です...</p>
+                                <!-- <img src="http://lemmmy.pw/osusig/sig.php?colour=pink&uname=KokeNya&pp=1&countryrank&darktriangles&avatarrounding=50&onlineindicator=3&xpbar&xpbarhex"> -->
+                            </div>
+                            <div class="tab-pane fade" id="dropdown">
+                                <p>... 準備中です...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
         
         <footer class="container">

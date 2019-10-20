@@ -1,15 +1,15 @@
 # niwaniwa.github.io
 
-##Library
+## Library
 
-###bootstrap
+### Bootstrap
 1.[Umi](https://ysakasin.github.io/Umi/ "Umi")
 
-###font
+### Font
 1.[Font Awesome free](https://fontawesome.com/ "Font Awesome free")
 
-###etc...
+### Etc...
 1.[Darkmode.js](https://darkmodejs.learn.uno/ "Darkmode.js")
 
-##リンク
+## Link
 [niwaniwa.github.io](http://niwaniwa.github.io/ "niwaniwa.github.io")
